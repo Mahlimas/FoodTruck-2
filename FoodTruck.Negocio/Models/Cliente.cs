@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodTruck.Negocio.Models
+namespace Foodtruck.Negocio.Models
 {
-    [Table(name: "Clientes")]
+    [Table(name:"Clientes")]
     public class Cliente
     {
         public long Id { get; set; }
@@ -16,16 +16,16 @@ namespace FoodTruck.Negocio.Models
         public String Email { get; set; }
 
         [NotMapped]
-        public String Descricao
-        {
+        public String Descricao {
             get
             {
                 return this.CPF + " - " + this.Nome;
             }
         }
+
         public String Descrever()
         {
-            return String.Format($"{this.CPF} - {this.Nome} - {this.Email}");
+            return String.Format($"{this.Id} - {this.CPF} - {this.Nome} - {this.Email}");
         }
     }
 }

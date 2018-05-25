@@ -1,4 +1,4 @@
-﻿using FoodTruck.Negocio.Models;
+﻿using Foodtruck.Negocio.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FoodTruck.Grafico
+namespace Foodtruck.Grafico
 {
     public partial class TelaListaBebidas : Form
     {
@@ -50,6 +50,7 @@ namespace FoodTruck.Grafico
         private void TelaListaBebidas_Load(object sender, EventArgs e)
         {
             CarregarBebidas();
+
         }
 
         private bool VerificarSelecao()
@@ -91,11 +92,6 @@ namespace FoodTruck.Grafico
                 Bebida bebidaSelecionada = (Bebida)dgBebidas.SelectedRows[0].DataBoundItem;
                 AbreTelaInclusaoAlteracao(bebidaSelecionada);
             }
-        }
-
-        private void dgBebidas_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

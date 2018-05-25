@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FoodTruck.Grafico.Properties
+namespace Foodtruck.Grafico.Properties
 {
 
 

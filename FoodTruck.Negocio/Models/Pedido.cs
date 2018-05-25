@@ -5,8 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodTruck.Negocio.Models
+namespace Foodtruck.Negocio.Models
 {
+
+
     [Table(name: "Pedidos")]
     public class Pedido
     {
@@ -29,5 +31,6 @@ namespace FoodTruck.Negocio.Models
             Decimal totalBebidas = this.Bebidas.Sum(m => m.Valor);
             return totalLanches + totalBebidas;
         }
+        
     }
 }

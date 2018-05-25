@@ -1,5 +1,5 @@
-﻿using FoodTruck.Negocio;
-using FoodTruck.Negocio.Models;
+﻿using Foodtruck.Negocio;
+using Foodtruck.Negocio.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FoodTruck.Grafico
+namespace Foodtruck.Grafico
 {
     public partial class AdicionaPedido : Form
     {
@@ -52,7 +52,7 @@ namespace FoodTruck.Grafico
         {
             dgBebidas.AutoGenerateColumns = false;
             dgBebidas.DataSource = pedido.Bebidas.ToList();
-
+            
             dgLanches.AutoGenerateColumns = false;
             dgLanches.DataSource = pedido.Lanches.ToList();
 
@@ -68,29 +68,36 @@ namespace FoodTruck.Grafico
 
         private void btAdicionaLanche_Click(object sender, EventArgs e)
         {
-            Lanche lancheSelecionado = (Lanche)cbLanches.SelectedItem as Lanche;
+            Lanche lancheSelecionado = cbLanches.SelectedItem as Lanche;
             pedido.Lanches.Add(lancheSelecionado);
             CarregaDatagrids();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            pedido.Cliente = cbClientes.SelectedItem as Cliente;
-            pedido.DataCompra = DateTime.Now;
-            Validacao validacao = Program.Gerenciador.CadastrarPedido(pedido);
-            if (validacao.Valido)
+            try
             {
-                MessageBox.Show("Pedido cadastrado com sucesso!");
-            }
-            else
-            {
-                String msg = "";
-                foreach (var mensagem in validacao.Mensagens)
+                pedido.Cliente = cbClientes.SelectedItem as Cliente;
+                pedido.DataCompra = DateTime.Now;
+                Validacao validacao = Program.Gerenciador.CadastraPedido(pedido);
+                if (validacao.Valido)
                 {
-                    msg += mensagem + Environment.NewLine;
+                    MessageBox.Show("Pedido cadastrado com sucesso!");
                 }
-                MessageBox.Show(msg, "Erro");
+                else
+                {
+                    String msg = "";
+                    foreach (var mensagem in validacao.Mensagens)
+                    {
+                        msg += mensagem + Environment.NewLine;
+                    }
+                    MessageBox.Show(msg, "Erro");
+                }
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro grave, fale com o administrador");
             }
+            
         }
     }
 }

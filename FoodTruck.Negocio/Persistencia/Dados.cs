@@ -1,11 +1,11 @@
-﻿using FoodTruck.Negocio.Models;
+﻿using Foodtruck.Negocio.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FoodTruck.Negocio.Persistencia
+namespace Foodtruck.Negocio.Persistencia
 {
     public class Dados
     {

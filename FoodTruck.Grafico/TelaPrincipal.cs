@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FoodTruck.Grafico
+namespace Foodtruck.Grafico
 {
     public partial class TelaPrincipal : Form
     {
@@ -68,12 +68,12 @@ namespace FoodTruck.Grafico
 
         private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -111,20 +111,6 @@ namespace FoodTruck.Grafico
             tela.Show();
         }
 
-        private void bebidasToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TelaListaBebidas tela = new TelaListaBebidas();
-            tela.MdiParent = this;
-            tela.Show();
-        }
-
-        private void lanchesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TelaListaLanche tela = new TelaListaLanche();
-            tela.MdiParent = this;
-            tela.Show();
-        }
-
         private void novoPedidoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AdicionaPedido tela = new AdicionaPedido();
@@ -132,9 +118,9 @@ namespace FoodTruck.Grafico
             tela.Show();
         }
 
-        private void pedidosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void bebidasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TelaListaPedidos tela = new TelaListaPedidos();
+            TelaListaBebidas tela = new TelaListaBebidas();
             tela.MdiParent = this;
             tela.Show();
         }

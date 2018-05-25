@@ -1,5 +1,5 @@
-﻿using FoodTruck.Negocio;
-using FoodTruck.Negocio.Models;
+﻿using Foodtruck.Negocio;
+using Foodtruck.Negocio.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FoodTruck.Grafico
+namespace Foodtruck.Grafico
 {
     public partial class ManterCliente : Form
     {
@@ -31,6 +31,7 @@ namespace FoodTruck.Grafico
             else
             {
                 cliente.Id = -1;
+                //passa indentificador com valor negativo se não conseguir converter
             }
             cliente.CPF = tbCpf.Text;
             cliente.Nome = tbNome.Text;
@@ -39,18 +40,19 @@ namespace FoodTruck.Grafico
             Validacao validacao;
             if (ClienteSelecionado == null)
             {
-               validacao = Program.Gerenciador.AdicionarCliente(cliente);
+                validacao = Program.Gerenciador.AdicionarCliente(cliente);
             }
             else
             {
                 validacao = Program.Gerenciador.AlterarCliente(cliente);
             }
+            
 
             
             if (!validacao.Valido)
             {
                 String mensagemValidacao = "";
-                foreach (var chave in validacao.Mensagens.Keys)
+                foreach(var chave in validacao.Mensagens.Keys)
                 {
                     String msg = validacao.Mensagens[chave];
                     mensagemValidacao += msg;
@@ -61,18 +63,14 @@ namespace FoodTruck.Grafico
             else
             {
                 MessageBox.Show("Cliente salvo com sucesso");
-                this.Close();
             }
+
+            this.Close();
         }
 
         private void btCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void ManterCliente_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void ManterCliente_Shown(object sender, EventArgs e)

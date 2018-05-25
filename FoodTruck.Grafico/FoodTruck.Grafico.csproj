@@ -4,12 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BCBC10EA-5C90-44AA-AE73-51649535CB44}</ProjectGuid>
+    <ProjectGuid>{61FDF7F2-E7DC-4F1A-ACAB-B6B8B3BB3513}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>FoodTruck.Grafico</RootNamespace>
-    <AssemblyName>FoodTruck.Grafico</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>Foodtruck.Grafico</RootNamespace>
+    <AssemblyName>Foodtruck.Grafico</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -69,12 +70,6 @@
     <Compile Include="ManterCliente.Designer.cs">
       <DependentUpon>ManterCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManterLanche.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManterLanche.Designer.cs">
-      <DependentUpon>ManterLanche.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TelaListaBebidas.cs">
@@ -88,18 +83,6 @@
     </Compile>
     <Compile Include="TelaListaClientes.Designer.cs">
       <DependentUpon>TelaListaClientes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TelaListaLanche.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TelaListaLanche.Designer.cs">
-      <DependentUpon>TelaListaLanche.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TelaListaPedidos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TelaListaPedidos.Designer.cs">
-      <DependentUpon>TelaListaPedidos.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaPrincipal.cs">
       <SubType>Form</SubType>
@@ -116,9 +99,6 @@
     <EmbeddedResource Include="ManterCliente.resx">
       <DependentUpon>ManterCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManterLanche.resx">
-      <DependentUpon>ManterLanche.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -133,12 +113,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaListaClientes.resx">
       <DependentUpon>TelaListaClientes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TelaListaLanche.resx">
-      <DependentUpon>TelaListaLanche.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TelaListaPedidos.resx">
-      <DependentUpon>TelaListaPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
@@ -158,9 +132,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FoodTruck.Negocio\FoodTruck.Negocio.csproj">
-      <Project>{7cf75221-0e24-4801-bfe8-99d451963251}</Project>
-      <Name>FoodTruck.Negocio</Name>
+    <ProjectReference Include="..\Foodtruck.Negocio\Foodtruck.Negocio.csproj">
+      <Project>{9a5b145e-5f2d-45d8-b624-c827732f1592}</Project>
+      <Name>Foodtruck.Negocio</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,4 +1,4 @@
-﻿using FoodTruck.Negocio.Models;
+﻿using Foodtruck.Negocio.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FoodTruck.Grafico
+namespace Foodtruck.Grafico
 {
     public partial class TelaListaClientes : Form
     {
@@ -17,6 +17,7 @@ namespace FoodTruck.Grafico
         {
             InitializeComponent();
         }
+
         private void AbreTelaInclusaoAlteracao(Cliente clienteSelecionado)
         {
             ManterCliente tela = new ManterCliente();
@@ -31,24 +32,9 @@ namespace FoodTruck.Grafico
             AbreTelaInclusaoAlteracao(null);
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void Tela_FormClosed(object sender, FormClosedEventArgs e)
         {
             CarregarClientes();
-        }
-
-        private bool VerificarSelecao()
-        {
-            if (dgClientes.SelectedRows.Count <=0)
-            {
-                MessageBox.Show("Selecione uma linha");
-                return false;
-            }
-            return true;
         }
 
         private void CarregarClientes()
@@ -64,6 +50,16 @@ namespace FoodTruck.Grafico
         private void TelaListaClientes_Load(object sender, EventArgs e)
         {
             CarregarClientes();
+        }
+
+        private bool VerificarSelecao()
+        {
+            if (dgClientes.SelectedRows.Count <= 0)
+            {
+                MessageBox.Show("Selecione uma linha");
+                return false;
+            }
+            return true;
         }
 
         private void btRemover_Click(object sender, EventArgs e)

@@ -1,4 +1,4 @@
-﻿namespace FoodTruck.Grafico
+﻿namespace Foodtruck.Grafico
 {
     partial class TelaListaClientes
     {
@@ -33,7 +33,6 @@
             this.btAlterar = new System.Windows.Forms.Button();
             this.dgClientes = new System.Windows.Forms.DataGridView();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgClientes)).BeginInit();
@@ -41,10 +40,10 @@
             // 
             // btAdicionar
             // 
-            this.btAdicionar.Location = new System.Drawing.Point(9, 10);
-            this.btAdicionar.Margin = new System.Windows.Forms.Padding(2);
+            this.btAdicionar.Location = new System.Drawing.Point(9, 21);
+            this.btAdicionar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btAdicionar.Name = "btAdicionar";
-            this.btAdicionar.Size = new System.Drawing.Size(67, 35);
+            this.btAdicionar.Size = new System.Drawing.Size(120, 53);
             this.btAdicionar.TabIndex = 0;
             this.btAdicionar.Text = "Adicionar";
             this.btAdicionar.UseVisualStyleBackColor = true;
@@ -52,10 +51,10 @@
             // 
             // btRemover
             // 
-            this.btRemover.Location = new System.Drawing.Point(80, 10);
-            this.btRemover.Margin = new System.Windows.Forms.Padding(2);
+            this.btRemover.Location = new System.Drawing.Point(134, 21);
+            this.btRemover.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btRemover.Name = "btRemover";
-            this.btRemover.Size = new System.Drawing.Size(67, 35);
+            this.btRemover.Size = new System.Drawing.Size(126, 53);
             this.btRemover.TabIndex = 1;
             this.btRemover.Text = "Remover";
             this.btRemover.UseVisualStyleBackColor = true;
@@ -63,10 +62,10 @@
             // 
             // btAlterar
             // 
-            this.btAlterar.Location = new System.Drawing.Point(152, 10);
-            this.btAlterar.Margin = new System.Windows.Forms.Padding(2);
+            this.btAlterar.Location = new System.Drawing.Point(266, 21);
+            this.btAlterar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btAlterar.Name = "btAlterar";
-            this.btAlterar.Size = new System.Drawing.Size(67, 35);
+            this.btAlterar.Size = new System.Drawing.Size(108, 53);
             this.btAlterar.TabIndex = 2;
             this.btAlterar.Text = "Alterar";
             this.btAlterar.UseVisualStyleBackColor = true;
@@ -80,28 +79,20 @@
             this.dgClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
-            this.CPF,
             this.Nome,
             this.Email});
-            this.dgClientes.Location = new System.Drawing.Point(10, 50);
-            this.dgClientes.Margin = new System.Windows.Forms.Padding(2);
+            this.dgClientes.Location = new System.Drawing.Point(9, 108);
+            this.dgClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgClientes.Name = "dgClientes";
-            this.dgClientes.RowTemplate.Height = 24;
-            this.dgClientes.Size = new System.Drawing.Size(581, 306);
+            this.dgClientes.RowTemplate.Height = 33;
+            this.dgClientes.Size = new System.Drawing.Size(826, 435);
             this.dgClientes.TabIndex = 3;
-            this.dgClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Id
             // 
             this.Id.DataPropertyName = "Id";
             this.Id.HeaderText = "Codigo";
             this.Id.Name = "Id";
-            // 
-            // CPF
-            // 
-            this.CPF.DataPropertyName = "Cpf";
-            this.CPF.HeaderText = "CPF";
-            this.CPF.Name = "CPF";
             // 
             // Nome
             // 
@@ -117,14 +108,14 @@
             // 
             // TelaListaClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(844, 553);
             this.Controls.Add(this.dgClientes);
             this.Controls.Add(this.btAlterar);
             this.Controls.Add(this.btRemover);
             this.Controls.Add(this.btAdicionar);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "TelaListaClientes";
             this.Text = "TelaListaClientes";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -141,7 +132,6 @@
         private System.Windows.Forms.Button btAlterar;
         private System.Windows.Forms.DataGridView dgClientes;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CPF;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
     }

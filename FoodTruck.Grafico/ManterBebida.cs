@@ -1,5 +1,5 @@
-﻿using FoodTruck.Negocio;
-using FoodTruck.Negocio.Models;
+﻿using Foodtruck.Negocio;
+using Foodtruck.Negocio.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FoodTruck.Grafico
+namespace Foodtruck.Grafico
 {
     public partial class ManterBebida : Form
     {
@@ -33,14 +33,14 @@ namespace FoodTruck.Grafico
             Validacao validacao;
             if (BebidaSelecionada == null)
             {
-                validacao = Program.Gerenciador.CadastrarBebida(bebida);
+                validacao = Program.Gerenciador.CadastraBebida(bebida);
             }
             else
             {
                 validacao = Program.Gerenciador.AlterarBebida(bebida);
             }
-
-            if (!validacao.Valido)
+            //qualquer coisa
+            if  (!validacao.Valido)
             {
                 String mensagemValidacao = "";
                 foreach (var chave in validacao.Mensagens.Keys)
@@ -63,60 +63,10 @@ namespace FoodTruck.Grafico
             this.Close();
         }
 
-        private void ManterBebida_Shown(object sender, EventArgs e)
-        {
-            if (BebidaSelecionada != null)
-            {
-                this.tbId.Text = BebidaSelecionada.Id.ToString();
-                this.tbNome.Text = BebidaSelecionada.Nome;
-                this.tbValor.Text = BebidaSelecionada.Valor.ToString();
-                this.tbTamanho.Text = BebidaSelecionada.Tamanho.ToString();
-            }
-        }
-
         private void ManterBebida_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void tbNome_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbValor_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbTamanho_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbId_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
+    
 }

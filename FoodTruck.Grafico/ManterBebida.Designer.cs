@@ -1,4 +1,4 @@
-﻿namespace FoodTruck.Grafico
+﻿namespace Foodtruck.Grafico
 {
     partial class ManterBebida
     {
@@ -42,22 +42,22 @@
             // 
             // btCancelar
             // 
-            this.btCancelar.Location = new System.Drawing.Point(572, 259);
+            this.btCancelar.Location = new System.Drawing.Point(607, 302);
             this.btCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btCancelar.Name = "btCancelar";
             this.btCancelar.Size = new System.Drawing.Size(147, 66);
-            this.btCancelar.TabIndex = 19;
+            this.btCancelar.TabIndex = 29;
             this.btCancelar.Text = "Cancelar";
             this.btCancelar.UseVisualStyleBackColor = true;
             this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
             // btSalvar
             // 
-            this.btSalvar.Location = new System.Drawing.Point(740, 259);
+            this.btSalvar.Location = new System.Drawing.Point(775, 302);
             this.btSalvar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(147, 66);
-            this.btSalvar.TabIndex = 18;
+            this.btSalvar.TabIndex = 28;
             this.btSalvar.Text = "Salvar";
             this.btSalvar.UseVisualStyleBackColor = true;
             this.btSalvar.Click += new System.EventHandler(this.btSalvar_Click);
@@ -67,94 +67,86 @@
             this.tbNome.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbNome.Location = new System.Drawing.Point(110, 95);
+            this.tbNome.Location = new System.Drawing.Point(145, 138);
             this.tbNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new System.Drawing.Size(775, 26);
-            this.tbNome.TabIndex = 15;
-            this.tbNome.TextChanged += new System.EventHandler(this.tbNome_TextChanged);
+            this.tbNome.TabIndex = 25;
             // 
             // tbValor
             // 
             this.tbValor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbValor.Location = new System.Drawing.Point(110, 150);
+            this.tbValor.Location = new System.Drawing.Point(145, 193);
             this.tbValor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbValor.Name = "tbValor";
             this.tbValor.Size = new System.Drawing.Size(775, 26);
-            this.tbValor.TabIndex = 16;
-            this.tbValor.TextChanged += new System.EventHandler(this.tbValor_TextChanged);
+            this.tbValor.TabIndex = 26;
             // 
             // tbTamanho
             // 
             this.tbTamanho.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbTamanho.Location = new System.Drawing.Point(110, 202);
+            this.tbTamanho.Location = new System.Drawing.Point(145, 245);
             this.tbTamanho.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbTamanho.Name = "tbTamanho";
             this.tbTamanho.Size = new System.Drawing.Size(775, 26);
-            this.tbTamanho.TabIndex = 17;
-            this.tbTamanho.TextChanged += new System.EventHandler(this.tbTamanho_TextChanged);
+            this.tbTamanho.TabIndex = 27;
             // 
             // tbId
             // 
             this.tbId.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbId.Location = new System.Drawing.Point(110, 39);
+            this.tbId.Location = new System.Drawing.Point(145, 82);
             this.tbId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbId.Name = "tbId";
             this.tbId.Size = new System.Drawing.Size(775, 26);
-            this.tbId.TabIndex = 14;
-            this.tbId.TextChanged += new System.EventHandler(this.tbId_TextChanged);
+            this.tbId.TabIndex = 24;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 154);
+            this.label4.Location = new System.Drawing.Point(75, 197);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 20);
-            this.label4.TabIndex = 13;
+            this.label4.TabIndex = 23;
             this.label4.Text = "Valor:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 206);
+            this.label3.Location = new System.Drawing.Point(46, 249);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 20);
-            this.label3.TabIndex = 12;
+            this.label3.TabIndex = 22;
             this.label3.Text = "Tamanho:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 95);
+            this.label2.Location = new System.Drawing.Point(71, 138);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 20);
-            this.label2.TabIndex = 11;
+            this.label2.TabIndex = 21;
             this.label2.Text = "Nome:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 39);
+            this.label1.Location = new System.Drawing.Point(64, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 20);
-            this.label1.TabIndex = 10;
+            this.label1.TabIndex = 20;
             this.label1.Text = "Código:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ManterBebida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(899, 356);
+            this.ClientSize = new System.Drawing.Size(968, 451);
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.btSalvar);
             this.Controls.Add(this.tbNome);
@@ -165,12 +157,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ManterBebida";
             this.Text = "ManterBebida";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ManterBebida_Load);
-            this.Shown += new System.EventHandler(this.ManterBebida_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

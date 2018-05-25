@@ -1,14 +1,15 @@
-﻿using FoodTruck.Negocio;
+﻿using Foodtruck.Negocio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FoodTruck.Grafico
+namespace Foodtruck.Grafico
 {
     public static class Program
     {
+
         public static Gerenciador Gerenciador = new Gerenciador();
 
         /// <summary>
