@@ -10,6 +10,8 @@ namespace Foodtruck.Negocio
 {
     public class Gerenciador
     {
+        
+
         private Banco banco = new Banco();
 
         public Validacao RemoverBebida(Bebida bebida)

@@ -50,7 +50,6 @@ namespace Foodtruck.Grafico
         private void TelaListaBebidas_Load(object sender, EventArgs e)
         {
             CarregarBebidas();
-
         }
 
         private bool VerificarSelecao()
