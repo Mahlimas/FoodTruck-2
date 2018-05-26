@@ -58,7 +58,6 @@
     <Compile Include="AdicionaPedido.Designer.cs">
       <DependentUpon>AdicionaPedido.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gerenciador.cs" />
     <Compile Include="ManterBebida.cs">
       <SubType>Form</SubType>
     </Compile>

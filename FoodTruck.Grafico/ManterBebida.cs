@@ -63,9 +63,12 @@ namespace Foodtruck.Grafico
             this.Close();
         }
 
-        private void ManterBebida_Load(object sender, EventArgs e)
+        private void ManterBebida_Shown(object sender, EventArgs e)
         {
-
+            this.tbId.Text = BebidaSelecionada.Id.ToString();
+            this.tbNome.Text = BebidaSelecionada.Nome;
+            this.tbValor.Text = BebidaSelecionada.Valor.ToString();
+            this.tbTamanho.Text = BebidaSelecionada.Tamanho.ToString();
         }
     }
     

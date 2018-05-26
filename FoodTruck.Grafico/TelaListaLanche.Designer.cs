@@ -80,6 +80,7 @@
             this.btAlterar.TabIndex = 14;
             this.btAlterar.Text = "Alterar";
             this.btAlterar.UseVisualStyleBackColor = true;
+            this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
             // 
             // btRemover
             // 
@@ -89,6 +90,7 @@
             this.btRemover.TabIndex = 13;
             this.btRemover.Text = "Remover";
             this.btRemover.UseVisualStyleBackColor = true;
+            this.btRemover.Click += new System.EventHandler(this.btRemover_Click);
             // 
             // btAdicionar
             // 
@@ -111,6 +113,7 @@
             this.Controls.Add(this.btAdicionar);
             this.Name = "TelaListaLanche";
             this.Text = "TelaListaLanche";
+            this.Load += new System.EventHandler(this.TelaListaLanche_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgLanches)).EndInit();
             this.ResumeLayout(false);
 

@@ -159,7 +159,7 @@
             this.Controls.Add(this.label1);
             this.Name = "ManterBebida";
             this.Text = "ManterBebida";
-            this.Load += new System.EventHandler(this.ManterBebida_Load);
+            this.Shown += new System.EventHandler(this.ManterBebida_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
