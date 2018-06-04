@@ -30,7 +30,7 @@ namespace Foodtruck.Grafico
 
         private void CarregaTotal()
         {
-            lbTotal.Text = pedido.ValorTotal().ToString();
+            lbTotal.Text = pedido.ValorTotal.ToString();
         }
 
         private void CarregaComboBoxes()

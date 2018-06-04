@@ -68,6 +68,14 @@ namespace Foodtruck.Negocio
             return validacao;
         }
 
+        public Validacao RemoverPedido(Pedido pedido)
+        {
+            Validacao validacao = new Validacao();
+            banco.Pedidos.Remove(pedido);
+            banco.SaveChanges();
+            return validacao;
+        }
+
         public Validacao AdicionarCliente(Cliente clienteAdicionado)
         {
             Validacao validacao = new Validacao();
